@@ -1,0 +1,154 @@
+.services {
+  position: relative;
+  background: var(--secBg);
+}
+._component {
+  display: flex;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+._first {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 6rem 3rem 0;
+
+  div {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+
+    img {
+      display: flex;
+      height: 20px;
+    }
+
+    p {
+      font-size: 0.96em;
+      font-weight: 600;
+      color: var(--pram);
+      text-transform: uppercase;
+
+      @media screen and (max-width: 768px) {
+        margin: -4px 0 0;
+      }
+    }
+  }
+  ._reason {
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      line-height: 0.9;
+    }
+
+    span {
+      font-weight: 200;
+    }
+  }
+  ._desc {
+    width: 70%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.86em;
+    padding: 16px 18px;
+    border: none;
+    outline: none;
+    background: var(--secClr);
+    color: whitesmoke;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    span {
+      padding: 0 5px;
+      border-left: 1px solid whitesmoke;
+    }
+    &:hover {
+      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+
+._bg_img {
+  display: flex;
+  flex: 0.2;
+  padding: 1em;
+  background: var(--secClr);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  img {
+    height: 45rem;
+  }
+}
+
+._services_card {
+  position: absolute;
+  bottom: 2em;
+  display: flex;
+  align-items: center;
+  margin: 0 3rem;
+  padding: 1rem;
+  background: #fff;
+  gap: 100px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    position: relative;
+    top: 2em;
+  }
+}
+
+._card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h3 {
+    font-size: x-large;
+    font-weight: 400;
+  }
+
+  p {
+    color: gray;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 0.86em;
+    padding: 16px 18px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: var(--pram);
+    border: 1px solid var(--pram);
+    cursor: pointer;
+    text-transform: uppercase;
+
+    span {
+      padding: 0 5px;
+      border-left: 1px solid whitesmoke;
+    }
+    &:hover {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+  }
+}

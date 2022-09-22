@@ -1,0 +1,160 @@
+.testimonials {
+  background: var(--secBg);
+  padding: 6rem 0;
+}
+._component {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
+}
+._first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+._reason {
+  font-size: 2rem;
+  font-weight: 400;
+
+  span {
+    font-weight: 200;
+  }
+
+  line-height: 1.2;
+}
+._head {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  margin: 0;
+
+  img {
+    width: 20px;
+  }
+  p {
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--pram);
+    margin-bottom: 4px;
+  }
+}
+
+._second {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+._left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  p {
+    width: 70%;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 30px;
+    color: gray;
+    font-style: italic;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  ._bio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (max-width: 768px) {
+      gap: 5px;
+    }
+
+    img {
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+
+      @media screen and (max-width: 768px) {
+        gap: 8px;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: larger;
+        font-weight: 500;
+      }
+      p {
+        font-size: larger;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+        color: var(--darkPink);
+      }
+    }
+  }
+}
+
+._right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.4em;
+  width: 24em;
+  background-color: var(--darkPink);
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    margin-top: 1em;
+  }
+}
+
+._right_stat {
+  display: flex;
+  align-items: flex-start;
+  padding: 2em 1em;
+  gap: 20px;
+
+  img {
+    height: 30px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    h3 {
+      font-size: 2.8em;
+      color: whitesmoke;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: medium;
+      text-transform: uppercase;
+      color: whitesmoke;
+    }
+  }
+}

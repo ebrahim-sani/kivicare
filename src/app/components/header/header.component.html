@@ -1,0 +1,85 @@
+<div class="app__header">
+  <div>
+    <div class="top__header">
+      <div class="left__content">
+        <img src="../../../assets/app_logo.png" alt="app_logo" />
+
+        <ul>
+          <li>home <span>+</span></li>
+          <li>pages <span>+</span></li>
+          <li>specialization <span>+</span></li>
+          <li>blog <span>+</span></li>
+          <li>shop <span>+</span></li>
+        </ul>
+      </div>
+
+      <div class="right__content">
+        <img src="../../../assets/search.svg" alt="" />
+        <img class="cart_icon" src="../../../assets/cart.svg" alt="cart_icon" />
+        <img src="../../../assets/person.svg" alt="" />
+        <button class="home__btn">appointment<span>+</span></button>
+        <img
+          (click)="onToggle()"
+          class="menu__icon"
+          src="../../../assets/menu.png"
+          alt="menu_icon"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="header__body wrapper">
+    <div class="left_">
+      <span class="tagline">top doctors</span>
+      <h2>Make Your</h2>
+      <p>Life Healthy</p>
+      <button class="home__btn">get appointment<span>+</span></button>
+    </div>
+
+    <div class="mid_body">
+      <img src="../../../assets/c1.png" alt="" />
+      <img class="d_c" src="../../../assets/dc.png" alt="" />
+      <img class="d_c" src="../../../assets/c2.png" alt="" />
+    </div>
+
+    <div class="right_header">
+      <div class="right_motto">
+        <span>our motto</span>
+        <h1>great health</h1>
+      </div>
+
+      <div class="right_mid">
+        <h2>specialisation in</h2>
+        <p>cardiologist:</p>
+        <p>audiologist:</p>
+        <p>internist:</p>
+      </div>
+
+      <div class="dc_info">
+        <p>Medical Info</p>
+        <h3>Dr. K. F. Brandina</h3>
+        <img src="../../../assets/sign.png" alt="dr_sign" />
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile_nav" [ngClass]="toggle === false ? 'hidden' : ''">
+    <div class="m_first">
+      <span (click)="onToggle()">X</span>
+      <img src="../../../assets/app_logo.png" alt="logo" />
+    </div>
+
+    <div class="m_second">
+      <p>Home</p>
+      <p>Pages</p>
+      <p>Specialization</p>
+      <p>Blog</p>
+      <p>Shop</p>
+    </div>
+
+    <div class="m_third">
+      <button class="__btn">dashboard<span>+</span></button>
+      <button class="__btn">get appointment<span>+</span></button>
+    </div>
+  </div>
+</div>

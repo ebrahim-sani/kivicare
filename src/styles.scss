@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background: #fafafa;
+}
+p {
+  margin: 0;
+}
+* {
+  --priClr: #dfebf7;
+  --secClr: rgb(255, 132, 153);
+  --pram: rgb(137, 137, 218);
+  --secBg: rgb(255, 236, 239);
+  --darkPink: rgb(236, 108, 129);
+}
+
+.wrapper {
+  padding: 0 3rem;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

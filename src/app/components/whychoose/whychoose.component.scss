@@ -1,0 +1,115 @@
+.why_choose {
+  background-size: cover;
+  background-image: url(../../../assets/why-bg.jpg);
+}
+._component {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4em 2em 4em 28em;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 4em;
+  }
+}
+
+._first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  div {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+
+    img {
+      display: flex;
+      height: 20px;
+    }
+
+    p {
+      font-size: 0.96em;
+      font-weight: 600;
+      color: var(--pram);
+      text-transform: uppercase;
+    }
+  }
+
+  ._reason {
+    font-size: 3rem;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      line-height: 0.995;
+      font-size: 2.7rem;
+      text-align: center;
+    }
+
+    span {
+      font-weight: 200;
+    }
+  }
+  ._desc {
+    width: 70%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+._second {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+._card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+
+  h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  ._btn {
+    width: 100%;
+    display: contents;
+
+    button {
+      display: flex;
+      align-self: center;
+      width: fit-content;
+      gap: 5px;
+      font-size: 0.86em;
+      padding: 16px 18px;
+      border: none;
+      outline: none;
+      background: #fff;
+      color: var(--pram);
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-top: 15px;
+
+      span {
+        padding: 0 5px;
+        border-left: 1px solid whitesmoke;
+      }
+      &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}
