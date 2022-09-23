@@ -1,1 +1,37 @@
-<p>login works!</p>
+<div class="_login">
+  <div class="_input_component">
+    <img src="../../../assets/app_logo.png" alt="logo" />
+    <div class="input_container">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input
+          matInput
+          placeholder="email@example.com"
+          [formControl]="email"
+          required
+        />
+        <mat-error *ngIf="email.invalid">
+          {{ getErrorMessage() }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button class="_btn">Login</button>
+    </div>
+  </div>
+
+  <div class="_banner"></div>
+</div>
