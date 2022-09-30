@@ -10,9 +10,20 @@ p {
 * {
   --priClr: #dfebf7;
   --secClr: rgb(255, 132, 153);
-  --pram: rgb(137, 137, 218);
+  --pram: rgb(156, 156, 233);
   --secBg: rgb(255, 236, 239);
   --darkPink: rgb(236, 108, 129);
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--pram);
+    border-radius: 10px;
+  }
 }
 
 .wrapper {
@@ -26,4 +37,23 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-expansion-indicator::after {
+  color: rgb(175, 175, 175);
+}
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled="true"])
+  .mat-expansion-panel-header:hover {
+  background: none;
+}
+.mat-expansion-panel-header.mat-expanded {
+  height: 40px;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.6em 0 1em 0;
+}
+.mat-form-field-infix {
+  border-top: 0.3em solid rgba(0, 0, 0, 0);
+}
+.mat-form-field-wrapper {
+  padding-bottom: 0;
 }

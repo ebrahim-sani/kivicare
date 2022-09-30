@@ -1,0 +1,33 @@
+.toolbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--priClr);
+  color: gray;
+  padding: 0.01em 4em;
+  font-size: 0.9em;
+  font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.top_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .social_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

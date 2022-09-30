@@ -1,0 +1,31 @@
+<div class="_dashboard">
+  <div class="_main_dashboard">
+    <div class="_sidebar">
+      <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="_main">
+      <div class="_header">
+        <img
+          (click)="onToggle()"
+          class="_menu"
+          src="../../../assets/side_menu.png"
+          alt="menu"
+        />
+        <div>
+          <p>Admin IT</p>
+          <div>
+            <img
+              class="_person"
+              src="../../../assets/personIll.png"
+              alt="person_icon"
+            />
+            <p>v</p>
+          </div>
+          <img src="../../../assets/x.svg" alt="" />
+        </div>
+      </div>
+      <app-main></app-main>
+    </div>
+  </div>
+</div>

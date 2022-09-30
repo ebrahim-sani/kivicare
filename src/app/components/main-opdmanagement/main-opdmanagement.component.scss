@@ -1,0 +1,151 @@
+.main_opd {
+  width: 100%;
+  margin-left: 1.3em;
+}
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+.main_body {
+  background: whitesmoke;
+  padding: 1em 0.5em;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.35);
+}
+
+._first_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  ._label {
+    width: 10em;
+  }
+
+  .patient_img {
+    border-radius: 50%;
+    height: 80px;
+  }
+
+  ._status {
+    p {
+      padding: 6px 8px;
+      color: whitesmoke;
+      background: rgb(39, 39, 102);
+    }
+  }
+}
+
+._input {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  label {
+    width: 5em;
+    font-weight: 600;
+  }
+
+  ._icons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+._second_section {
+  margin-bottom: 20px;
+  ._details {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--pram);
+    background-color: var(--priClr);
+    justify-content: space-between;
+
+    ._right {
+      h3 {
+        font-weight: 600;
+        color: blue;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 600;
+
+        span {
+          color: blue;
+          font-weight: 600;
+        }
+      }
+    }
+    ._left {
+      ._payer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        strong {
+          color: rgb(37, 37, 37);
+        }
+
+        p {
+          font-weight: 600;
+          color: gray;
+        }
+      }
+      ._input {
+        label {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+._reg_short {
+  width: 8em;
+}
+
+._third_section {
+  margin-bottom: 20px;
+  ._details {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(255, 211, 218);
+    background-color: var(--secBg);
+    justify-content: space-between;
+  }
+
+  h3 {
+    border-bottom: 1px solid rgb(196, 196, 196);
+  }
+
+  ._value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+._fourth_section {
+  margin-bottom: 20px;
+  ._details {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  h3 {
+    border-bottom: 1px solid rgb(196, 196, 196);
+  }
+}
+#_amount_type {
+  width: 8em;
+}
